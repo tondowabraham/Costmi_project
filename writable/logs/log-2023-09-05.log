@@ -1,0 +1,22 @@
+CRITICAL - 2023-09-05 17:48:56 --> syntax error, unexpected variable "$data", expecting ")"
+in APPPATH/Controllers/Detailed_Estimates.php on line 20.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-05 17:49:22 --> Invalid file: "detailed_estimates/direct_table.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 3 APPPATH/Views/detailed_estimates/index.php(14): view()
+ 4 SYSTEMPATH/View/View.php(224): include('/var/www/vhosts/costmi.com/httpdocs/app/Views/detailed_estimates/index.php')
+ 5 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/Detailed_Estimates.php(16): view()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Detailed_Estimates->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,22 @@
+CRITICAL - 2023-09-04 11:28:14 --> Array to string conversion
+in APPPATH/Views/production/modal_form.php on line 57.
+ 1 APPPATH/Views/production/modal_form.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/vhosts/costmi.com/httpdocs/app/Views/production/modal_form.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Production.php(57): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Production->modal_form()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-04 11:28:26 --> Array to string conversion
+in APPPATH/Views/production/modal_form.php on line 57.
+ 1 APPPATH/Views/production/modal_form.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/vhosts/costmi.com/httpdocs/app/Views/production/modal_form.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Production.php(57): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Production->modal_form()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
