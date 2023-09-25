@@ -2,9 +2,9 @@
     <div class="card-header title-tab">
         <h4 class="float-start"><?php echo app_lang('meas_library'); ?></h4>
         <div class="title-button-group">
-            <button class="btn btn-default" id="area" onclick="showTable('Area')">Area Table</button>
-            <button class="btn btn-default" id="volume" onclick="showTable('Volume')">Volume Table</button>
-            <button class="btn btn-default" id="weight" onclick="showTable('Weight')">Weight Table</button>
+            <button class="btn btn-default" id="areaButton" onclick="showTable('Area')">Area Table</button>
+            <button class="btn btn-default" id="volumeButton" onclick="showTable('Volume')">Volume Table</button>
+            <button class="btn btn-default" id="weightButton" onclick="showTable('Weight')">Weight Table</button>
 
             <?php
             echo modal_anchor(get_uri("measurements/modal_form"), "<i data-feather='plus-circle' class='icon-16'></i> " . app_lang('add_measurement'), array("class" => "btn btn-default", "title" => app_lang('add_measurement')));
@@ -22,24 +22,10 @@
     </div>   
 </div>
 
-
 <script>
     $(document).ready(function () {
         $('#measurement_table').appTable();
     });
-
-    function showTable(measurementType) {
-        var tableRows = document.querySelectorAll("#measurement_table tbody tr");
-        
-        tableRows.forEach(function(row) {
-            var measurementTypeCell = row.querySelector("td:nth-child(1)");
-            if (measurementTypeCell.textContent === measurementType) {
-                row.style.display = "table-row";
-            } else {
-                row.style.display = "none";
-            }
-        });
-    }
 
     function showTable(tableType) {
         const areaTable = document.getElementById("areaTable");
